@@ -2,7 +2,9 @@
 from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
+import allure
 
+@allure.epic("DELETE cases")
 class TestUserEdit(BaseCase):
     def test_deleting_user_number_2(self):
         data = {
